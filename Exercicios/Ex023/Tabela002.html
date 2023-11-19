@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 004</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        thead tr th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        caption{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grande</h1>
+
+    <!-- ANATOMIA PARA TABELAS GRANDE
+        TABLE
+        CAPTION
+          THEAD
+              TR, TD, TH
+          TBODY  
+              TR, TD, TH
+          TFOOT
+              TR, TD, TH  
+     -->
+     
+     <table>
+        <caption>Popução das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Polação</th>
+            </tr>
+        </thead>
+     <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td>45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td>21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td>15 989 929</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td>14 016 906</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td>10 444 526</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td>10 693 929</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td>8 796 448</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td>8 452 381</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td>7 581 051</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td>6 248 436</td>
+        </tr>
+        <tr>
+            <td>Goiás</td>
+            <td>6 003 788</td>
+        </tr>
+     </tbody>
+     <tfoot>
+        <tr>
+            <th>Total de Habilidades</th>
+            <td>0000</td>
+        </tr>
+     </tfoot>
+    </table>
+</body>
+</html>
